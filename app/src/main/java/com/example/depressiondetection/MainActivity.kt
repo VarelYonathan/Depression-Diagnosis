@@ -30,7 +30,8 @@ class MainActivity : ComponentActivity() {
     var rg_se_9: RadioGroup? = null
     var rg_se_10: RadioGroup? = null
 //    var url = "https://student-placement-app.herokuapp.com/predict"
-    var url = "http://127.0.0.1:5000"
+//    var url = "http://127.0.0.1:5000/predict"
+    var url = "https://freeznix.pythonanywhere.com/predict"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_questioner)
@@ -73,8 +74,8 @@ class MainActivity : ComponentActivity() {
 //            hasil!!.text = headache.toString()
 //            hasil!!.text = blood_pressure.toString()
 //            hasil!!.text = sleep_quality.toString()
-//            hasil!!.text = noise_level.toString()
 //            hasil!!.text = breathing_problem.toString()
+//            hasil!!.text = noise_level.toString()
 //            hasil!!.text = living_conditions.toString()
 //            hasil!!.text = safety.toString()
 //            hasil!!.text = basic_needs.toString()
@@ -86,75 +87,76 @@ class MainActivity : ComponentActivity() {
 //            hasil!!.text = peer_pressure.toString()
 //            hasil!!.text = extracurricular_activities.toString()
 //            hasil!!.text = bullying.toString()
+
+            val queue = Volley.newRequestQueue(this)
             // hit the API -> Volley
             val stringRequest: StringRequest = object : StringRequest(
-                Method.POST, url,
-                Response.Listener<String> {
-                    fun onResponse(response: String?) {
-                        try {
-                            val jsonObject = JSONObject(response)
-                            val data = jsonObject.getString("placement")
-                            if (data == "0") {
-                                hasil!!.text = "Tidak Depresi atau Depresi Ringan"
-                            } else if(data == "1"){
-                                hasil!!.text = "Depresi Sedang"
-                            } else if(data == "2"){
-                                hasil!!.text = "Depresi Berat"
-                            }
-                        } catch (e: JSONException) {
-                            e.printStackTrace()
+                Method.POST, url, { response ->
+                    try {
+                        val jsonObject = JSONObject(response)
+                        val data = jsonObject.getString("placement")
+                        if (data == "0") {
+                            hasil!!.text = "Tidak Depresi atau Depresi Ringan"
+                        } else if(data == "1"){
+                            hasil!!.text = "Depresi Sedang"
+                        } else if(data == "2"){
+                            hasil!!.text = "Depresi Berat"
+                        }else{
+                            hasil!!.text = "Ada error"
                         }
+                    } catch (e: JSONException) {
+                        e.printStackTrace()
                     }
                 },
-                Response.ErrorListener { error ->
+                { error ->
                     Toast.makeText(
                         this@MainActivity,
                         error.message,
                         Toast.LENGTH_SHORT
                     ).show()
                 }) {
-                override fun getParams(): Map<String, String>{
-//                    Map params = new HashMap();
-                    return mapOf(
-                        "self_esteem" to cal.toString(),
-                        "headache" to headache.toString(),
-                        "blood_pressure" to blood_pressure.toString(),
-                        "sleep_quality" to sleep_quality.toString(),
-                        "breathing_problem" to breathing_problem.toString(),
-                        "noise_level" to noise_level.toString(),
-                        "living_conditions" to living_conditions.toString(),
-                        "safety" to safety.toString(),
-                        "basic_needs" to basic_needs.toString(),
-                        "academic_performance" to academic_performance.toString(),
-                        "study_load" to study_load.toString(),
-                        "teacher_student_relationship" to teacher_student_relationship.toString(),
-                        "future_career_concerns" to future_career_concerns.toString(),
-                        "social_support" to social_support.toString(),
-                        "peer_pressure" to peer_pressure.toString(),
-                        "extracurricular_activities" to extracurricular_activities.toString(),
-                        "bullying" to bullying.toString()
-                    )
-//                    params["self_esteem"] = cal.toString()
-//                    params["headache"] = headache.toString()
-//                    params["blood_pressure"] = blood_pressure.toString()
-//                    params["sleep_quality"] = sleep_quality.toString()
-//                    params["breathing_problem"] = breathing_problem.toString()
-//                    params["noise_level"] = noise_level.toString()
-//                    params["living_conditions"] = living_conditions.toString()
-//                    params["safety"] = safety.toString()
-//                    params["basic_needs"] = basic_needs.toString()
-//                    params["academic_performance"] = academic_performance.toString()
-//                    params["study_load"] = study_load.toString()
-//                    params["teacher_student_relationship"] = teacher_student_relationship.toString()
-//                    params["future_career_concerns"] = future_career_concerns.toString()
-//                    params["social_support"] = social_support.toString()
-//                    params["peer_pressure"] = peer_pressure.toString()
-//                    params["extracurricular_activities"] = extracurricular_activities.toString()
-//                    params["bullying"] = bullying.toString()
-//                    return params
+                override fun getParams(): MutableMap<String, String> {
+                    val hashMap = HashMap<String, String>()
+//                    hashMap.put("name", "peter")
+//                    self_esteem:0.7
+                    hashMap.put("self_esteem", cal.toString())
+//                    mental_health_history:0.0
+                    hashMap.put("mental_health_history", mental_health_history.toString())
+//                    headache:0.5
+                    hashMap.put("headache", headache.toString())
+//                    blood_pressure:0.0
+                    hashMap.put("blood_pressure", blood_pressure.toString())
+//                    sleep_quality:0.5
+                    hashMap.put("sleep_quality", sleep_quality.toString())
+//                    breathing_problem:0.5
+                    hashMap.put("breathing_problem", breathing_problem.toString())
+//                    noise_level:0.5
+                    hashMap.put("noise_level", noise_level.toString())
+//                    living_conditions:0.5
+                    hashMap.put("living_conditions", living_conditions.toString())
+//                    safety:0.5
+                    hashMap.put("safety", safety.toString())
+//                    basic_needs:0.5
+                    hashMap.put("basic_needs", basic_needs.toString())
+//                    academic_performance:0.5
+                    hashMap.put("academic_performance", academic_performance.toString())
+//                    study_load:0.5
+                    hashMap.put("study_load", study_load.toString())
+//                    teacher_student_relationship:0.5
+                    hashMap.put("teacher_student_relationship", teacher_student_relationship.toString())
+//                    future_career_concern:0.5
+                    hashMap.put("future_career_concern", future_career_concerns.toString())
+//                    social_support:1.0
+                    hashMap.put("social_support", social_support.toString())
+//                    peer_pressure:0.5
+                    hashMap.put("peer_pressure", peer_pressure.toString())
+//                    extracurricular_activities:0.5
+                    hashMap.put("extracurricular_activities", extracurricular_activities.toString())
+//                    bullying:0.5
+                    hashMap.put("bullying", bullying.toString())
+                    return hashMap
                 }
             }
-            val queue = Volley.newRequestQueue(this@MainActivity)
             queue.add(stringRequest)
         }
 
@@ -293,7 +295,7 @@ class MainActivity : ComponentActivity() {
         if (txt == "Tekanan darah saya rendah"){
             temp = 0.0
         }else if(txt == "Tekanan darah saya normal"){
-            temp = 1.0
+            temp = 0.5
         }else if(txt == "Ya, saya memiliki tekanan darah yang tinggi"){
             temp = 1.0
         }
@@ -387,7 +389,7 @@ class MainActivity : ComponentActivity() {
 
     fun get_basic_needs(): Double {
         var temp:Double = -1.0
-        var selectedGroup = findViewById<View>(R.id.safety) as RadioGroup
+        var selectedGroup = findViewById<View>(R.id.basic_needs) as RadioGroup
         var selected: Int = selectedGroup!!.checkedRadioButtonId
         var selectedView = findViewById(selected) as RadioButton
 
