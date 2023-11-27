@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="24dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Questioner"
+            android:textSize="32sp"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secara keseluruhan, saya puas dengan diri saya sendiri"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:id="@+id/self_esteem_1"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbn_1_self_esteem_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Sangat Setuju" />
+
+            <RadioButton
+                android:id="@+id/rbn_2_self_esteem_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Setuju" />
+
+            <RadioButton
+                android:id="@+id/rbn_3_self_esteem_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Tidak Setuju" />
+
+            <RadioButton
+                android:id="@+id/rbn_4_self_esteem_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Sangat Tidak Setuju" />
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kadang-kadang saya pikir saya tidak baik sama sekali."
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:id="@+id/self_esteem_2"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbn_1_self_esteem_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Sangat Setuju" />
+
+            <RadioButton
+                android:id="@+id/rbn_2_self_esteem_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Setuju" />
+
+            <RadioButton
+                android:id="@+id/rbn_3_self_esteem_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Tidak Setuju" />
+
+            <RadioButton
+                android:id="@+id/rbn_4_self_esteem_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Sangat Tidak Setuju" />
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya merasa bahwa saya memiliki sejumlah kualitas yang baik."
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+        <RadioGroup
+            android:id="@+id/self_esteem_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbn_1_self_esteem_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Sangat Setuju" />
+
+            <RadioButton
+                android:id="@+id/rbn_2_self_esteem_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Setuju" />
+
+            <RadioButton
+                android:id="@+id/rbn_3_self_esteem_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Tidak Setuju" />
+
+            <RadioButton
+                android:id="@+id/rbn_4_self_esteem_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Sangat Tidak Setuju" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya mampu melakukan banyak hal sebaik kebanyakan orang lainnya.
+"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+        <RadioGroup
+            android:id="@+id/self_esteem_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_1_self_esteem_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_2_self_esteem_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_3_self_esteem_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_4_self_esteem_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Tidak Setuju"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya merasa tidak punya banyak hal untuk dibanggakan."
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+        <RadioGroup
+            android:id="@+id/self_esteem_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_1_self_esteem_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_2_self_esteem_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_3_self_esteem_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_4_self_esteem_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Tidak Setuju"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tentu saja saya kadang-kadang merasa tidak berguna."
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+        <RadioGroup
+            android:id="@+id/self_esteem_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_1_self_esteem_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_2_self_esteem_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_3_self_esteem_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_4_self_esteem_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Tidak Setuju"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya merasa bahwa saya adalah orang yang berharga, setidaknya sejajar dengan orang lain."
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+        <RadioGroup
+            android:id="@+id/self_esteem_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_1_self_esteem_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_2_self_esteem_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_3_self_esteem_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_4_self_esteem_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Tidak Setuju"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya berharap saya bisa lebih menghormati diri saya sendiri."
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+        <RadioGroup
+            android:id="@+id/self_esteem_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_1_self_esteem_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_2_self_esteem_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_3_self_esteem_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_4_self_esteem_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Tidak Setuju"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secara keseluruhan, saya cenderung merasa bahwa saya gagal."
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+        <RadioGroup
+            android:id="@+id/self_esteem_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_1_self_esteem_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_2_self_esteem_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_3_self_esteem_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_4_self_esteem_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Tidak Setuju"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya mengambil sikap positif terhadap diri saya sendiri."
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+        <RadioGroup
+            android:id="@+id/self_esteem_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_1_self_esteem_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_2_self_esteem_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_3_self_esteem_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak Setuju"/>
+            <RadioButton
+                android:id="@+id/rbn_4_self_esteem_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Tidak Setuju"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya pernah mengalami gangguan mental sebelumnya."
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+        <RadioGroup
+            android:id="@+id/mental_health_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_mental_health_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak pernah"/>
+            <RadioButton
+                android:id="@+id/rbn_1_mental_health_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, saya pernah"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akhir-akhir ini, Saya sering mengalami sakit kepala"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+        <RadioGroup
+            android:id="@+id/headache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_headache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak, saya jarang mengalami sakit kepala"/>
+            <RadioButton
+                android:id="@+id/rbn_1_headache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biasa Saja"/>
+            <RadioButton
+                android:id="@+id/rbn_2_headache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, saya sering mengalami sakit kepala"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya memiliki tekanan darah yang tinggi."
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+        <RadioGroup
+            android:id="@+id/blood_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_blood_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tekanan darah saya rendah"/>
+            <RadioButton
+                android:id="@+id/rbn_1_blood_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tekanan darah saya normal"/>
+            <RadioButton
+                android:id="@+id/rbn_2_blood_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, saya memiliki tekanan darah yang tinggi"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya memiliki kualitas tidur yang baik"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+        <RadioGroup
+            android:id="@+id/sleep_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_sleep_quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, saya selalu tidur dengan nyenyak"/>
+            <RadioButton
+                android:id="@+id/rbn_1_sleep_quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biasa Saja"/>
+            <RadioButton
+                android:id="@+id/rbn_2_sleep_quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak, saya tidak memiliki kualitas tidur yang baik"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya merasa pernafasan saya baik-baik saja"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/breathing_problem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_breathing_problem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, pernafasan saya baik-baik saja"/>
+            <RadioButton
+                android:id="@+id/rbn_1_breathing_problem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biasa Saja"/>
+            <RadioButton
+                android:id="@+id/rbn_2_breathing_problem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak, pernafasan saya terganggu"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya merasa lingkungan saya sangat ribut"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/noise_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_noise_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak, lingkungan saya tidak ribut"/>
+            <RadioButton
+                android:id="@+id/rbn_1_noise_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biasa Saja"/>
+            <RadioButton
+                android:id="@+id/rbn_2_noise_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, lingkungan saya ribut"/>
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya merasa kondisi kehidupan saya baik"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/living_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_living_conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, kondisi kehidupan saya baik"/>
+            <RadioButton
+                android:id="@+id/rbn_1_living_conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biasa Saja"/>
+            <RadioButton
+                android:id="@+id/rbn_2_living_conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak, kondisi kehidupan saya tidak baik"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya merasa tempat tinggal saya aman"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/safety"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_safety"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, tempat tinggal saya aman"/>
+            <RadioButton
+                android:id="@+id/rbn_1_safety"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biasa Saja"/>
+            <RadioButton
+                android:id="@+id/rbn_2_safety"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak, tempat tinggal saya tidak aman"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya merasa kebutuhan dasar saya terpenuhi"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/basic_needs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_basic_needs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, kebutuhan dasar saya terpenuhi"/>
+            <RadioButton
+                android:id="@+id/rbn_1_basic_needs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biasa Saja"/>
+            <RadioButton
+                android:id="@+id/rbn_2_basic_needs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak, kebutuhan dasar saya tidak terpenuhi"/>
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya merasa yakin dengan performa akademik saya"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/academic_performance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_academic_performance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, saya yakin"/>
+            <RadioButton
+                android:id="@+id/rbn_1_academic_performance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biasa Saja"/>
+            <RadioButton
+                android:id="@+id/rbn_2_academic_performance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak, saya tidak yakin"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya tidak merasa beban studi saya semester ini berat"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/study_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_study_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, beban studi saya ringan"/>
+            <RadioButton
+                android:id="@+id/rbn_1_study_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biasa Saja"/>
+            <RadioButton
+                android:id="@+id/rbn_2_study_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak, beban studi saya berat"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya merasa hubungan saya dengan dosen saya baik"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/student_teacher_relationship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_student_teacher_relationship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, saya memiliki hubungan yang baik dengan dosen saya"/>
+            <RadioButton
+                android:id="@+id/rbn_1_student_teacher_relationship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biasa Saja"/>
+            <RadioButton
+                android:id="@+id/rbn_2_student_teacher_relationship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak, saya tidak memiliki hubungan yang baik dengan dosen saya"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya yakin dengan karir saya di masa depan"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/future_career_concerns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_future_career_concerns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, saya merasa yakin dengan karir saya nanti"/>
+            <RadioButton
+                android:id="@+id/rbn_1_future_career_concerns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biasa Saja"/>
+            <RadioButton
+                android:id="@+id/rbn_2_future_career_concerns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak, saya tidak yakin dengan karir saya nanti"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya mendapatkan dukungan sosial dari lingkungan saya"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/social_support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_social_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, mendapatkan dukungan sosial"/>
+            <RadioButton
+                android:id="@+id/rbn_1_social_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biasa Saja"/>
+            <RadioButton
+                android:id="@+id/rbn_2_social_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak, saya jarang mendapatkan dukungan sosial"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya mendapatkan tekanan dari lingkungan saya"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+        <RadioGroup
+            android:id="@+id/peer_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_peer_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak, saya jarang mendapatkan tekanan dari lingkungan"/>
+            <RadioButton
+                android:id="@+id/rbn_1_peer_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pernah, tetapi tidak sering"/>
+            <RadioButton
+                android:id="@+id/rbn_2_peer_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, saya sering mendapatkan tekanan"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya sering melakukan kegiatan ekstrakurikuler"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/extracurricular_activities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_extracurricular_activities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, saya sering melakukan kegiatan ekstrakurikuler"/>
+            <RadioButton
+                android:id="@+id/rbn_1_extracurricular_activities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biasa Saja"/>
+            <RadioButton
+                android:id="@+id/rbn_2_extracurricular_activities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak, saya jarang melakukan kegiatan ekstrakurikuler"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya sering mendapatkan perundungan"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/bullying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn_0_bullying"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak, saya jarang dirundung"/>
+            <RadioButton
+                android:id="@+id/rbn_1_bullying"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pernah, tetapi tidak sering"/>
+            <RadioButton
+                android:id="@+id/rbn_2_bullying"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya, saya sering mendapatkan perundungan"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_hasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil"
+            android:textSize="32sp"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
